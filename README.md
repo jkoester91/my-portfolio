@@ -1,7 +1,5 @@
-# SQL Data Specialist Badge 🏅
 
-![SQL Data Specialist Badge](SQL-badge.png.png)
+<img src="https://github.com/jkoester91/my-portfolio/blob/main/SQL-badge.png?raw=true" width="500" alt="SQL Data Specialist Badge">
 
-Completed the SQL Data Specialist sprint by @TripleTen, mastering advanced SQL queries, data retrieval, and table relationships.
 
-Check out my projects and learning journey here!
+<img src="https://github.com/jkoester91/my-portfolio/blob/main/bi_analyst_badge.png?raw=true" width="500" alt="Business Intelligence Analyst Badge">
