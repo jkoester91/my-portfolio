@@ -9,7 +9,11 @@ The project leverages a "Storage-First" cloud architecture:
 * **Compute:** Training was performed on an **Amazon EC2** (Amazon Linux 2023) instance.
 * **Security:** **IAM Roles** allowed the EC2 instance to communicate with S3 securely without hardcoded credentials.
 
-
+## 📂 Project Structure
+- `train.py`: Main Python script for data preprocessing and model training.
+- `requirements.txt`: List of dependencies needed to run the project.
+- `data/`: (Stored on S3) Contains the Pima Indians Diabetes dataset.
+- `models/`: (Stored on S3) Contains the serialized `.pkl` model file.
 
 ## 📊 Model Performance
 * **Test Accuracy:** 84.42%
