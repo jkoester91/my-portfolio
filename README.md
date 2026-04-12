@@ -38,3 +38,7 @@ The project leverages a "Storage-First" cloud architecture:
 * Successfully implemented the **Cloud-Native Lifecycle**: Stage -> Compute -> Store -> Terminate.
 * Managed AWS networking via custom **VPC** and security groups.
 * Optimized model deployment by exporting as a `.pkl` file for future inference.
+
+# Sprint 15 - NLP Project
+[View my Sprint 15 NLP Project on Google Colab](https://colab.research.google.com/drive/1BF4kgm-ZoCn6Coh49QjkZuvARSGBtoO5)
+
