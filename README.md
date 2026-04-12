@@ -77,4 +77,3 @@ While traditional TF-IDF models performed well on simple vocabulary, **Model 9 (
 
 ### **Live Project Links**
 * **[Open Notebook in Google Colab](https://colab.research.google.com/drive/1BF4kgm-ZoCn6Coh49QjkZuvARSGBtoO5)**
-* **[View Source Code on GitHub](./Sprint_15_NLP_Revised.ipynb)**
