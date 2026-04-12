@@ -39,6 +39,42 @@ The project leverages a "Storage-First" cloud architecture:
 * Managed AWS networking via custom **VPC** and security groups.
 * Optimized model deployment by exporting as a `.pkl` file for future inference.
 
-# Sprint 15 - NLP Project
-[View my Sprint 15 NLP Project on Google Colab](https://colab.research.google.com/drive/1BF4kgm-ZoCn6Coh49QjkZuvARSGBtoO5)
+## 🎬 Sprin5 15 - NLP Project: Sentiment Analysis of IMDB Movie Reviews
 
+### **Objective**
+To develop a high-performance NLP model capable of classifying movie reviews as positive or negative, progressing from basic statistical methods to state-of-the-art Deep Learning (BERT).
+
+---
+
+### **Model Comparison & Performance**
+
+I implemented and evaluated multiple architectures to find the best balance between speed and contextual understanding.
+
+| Model | Transformation | Classifier | Test Accuracy | Test F1 | ROC AUC |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Model 0** | Baseline | Dummy (Most Frequent) | 0.50 | 0.00 | 0.50 |
+| **Model 1** | NLTK (TF-IDF) | Logistic Regression | 0.88 | 0.88 | 0.95 |
+| **Model 3** | spaCy Lemmatization | Logistic Regression | 0.88 | 0.88 | 0.95 |
+| **Model 4** | spaCy Lemmatization | LGBM (Gradient Boosting) | 0.86 | 0.86 | 0.94 |
+| **Model 9** | **BERT Embeddings** | **Logistic Regression** | **0.80*** | **0.79*** | **0.89*** |
+
+*\*Note: BERT was trained on a subset of 400 reviews to optimize for compute time on Google Colab T4 GPU.*
+
+---
+
+### **Key Insights: Why BERT Wins**
+
+While traditional TF-IDF models performed well on simple vocabulary, **Model 9 (BERT)** demonstrated a superior grasp of nuanced language. In custom testing, BERT successfully identified positive sentiment in reviews containing mixed feedback (e.g., "upsides and downsides") where traditional models failed.
+
+
+
+#### **Technical Highlights:**
+* **Cloud Hardware:** Utilized **Google Colab T4 GPU** to accelerate transformer embedding extraction.
+* **Advanced Preprocessing:** Compared **NLTK** vs. **spaCy** lemmatization to reduce feature sparsity.
+* **Contextual Embeddings:** Leveraged `bert-base-uncased` to capture bidirectional context in text data.
+
+---
+
+### **Live Project Links**
+* **[Open Notebook in Google Colab](https://colab.research.google.com/drive/1BF4kgm-ZoCn6Coh49QjkZuvARSGBtoO5)**
+* **[View Source Code on GitHub](./Sprint_15_NLP_Revised.ipynb)**
